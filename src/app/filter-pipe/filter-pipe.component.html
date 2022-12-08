@@ -1,0 +1,16 @@
+<p>filter-pipe works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div *ngFor="let u of users" class="my-3">
+                <div>Name:{{u.name | uppercase}}</div>
+                <div>Name:{{u.joineddate |date:'medium'}}</div>
+                <div>Name:{{u.age | number:'4.0-0'}}</div>
+                <div>Name:{{u.name | shorten}}</div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

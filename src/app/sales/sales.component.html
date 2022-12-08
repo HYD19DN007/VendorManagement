@@ -1,0 +1,18 @@
+<H1>Sales</H1>
+<a class="nav-link" [routerLink]="['/Sales',{
+outlets:{'ordersRoute':['Orders']}
+}]">Orders</a>
+
+<a class="nav-link" [routerLink]="['/Sales',{
+    outlets:{'vendorsRoute':['Vendors']}
+    }]">Vendor Information</a>
+    
+    
+
+
+<div class="container-fluid">
+    <router-outlet name="ordersRoute"></router-outlet>
+</div>
+<div class="container-fluid">
+    <router-outlet name="vendorsRoute"></router-outlet>
+</div>

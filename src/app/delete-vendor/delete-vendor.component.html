@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>VendorId</label>
+       <input type="text" class="form-control" name="vendorId" [(ngModel)]="vendor.vendorId">
+    </div>
+    <div class="form-group">
+        <label>name</label>
+       <input type="text" class="form-control" name="name" [(ngModel)]="vendor.name">
+    </div>
+    <div class="form-group">
+        <label>Date of Regitration</label>
+       <input type="date" class="form-control" name="dateofRegitration" [(ngModel)]="vendor.dateofRegitration">
+    </div>
+    <div class="form-group">
+        <label>Duration</label>
+       <input type="text" class="form-control" name="durationinDays" [(ngModel)]="vendor.durationinDays">
+    </div>
+<button class="btn btn-success" type="submit">Submit</button>
+
+
+</form>
